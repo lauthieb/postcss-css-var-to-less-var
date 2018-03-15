@@ -1,0 +1,51 @@
+{
+  "name": "postcss-css-var-to-sass-var",
+  "version": "1.0.0",
+  "description": "A PostCSS plugin to convert CSS variables to Sass variables",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "https://github.com/arpadHegedus/postcss-css-var-to-sass-var.git",
+  "homepage": "https://github.com/arpadHegedus/postcss-css-var-to-sass-var#readme",
+  "bugs": "https://github.com/arpadHegedus/postcss-css-var-to-sass-var/issues",
+  "keywords": [
+    "postcss",
+    "postcss-plugin",
+    "preprocessor",
+    "plugin",
+    "css",
+    "style",
+    "variable",
+    "sass"
+  ],
+  "author": "Arpad Hegedus <hegedus.arpad@gmail.com> (http://arpadhegedus.com)",
+  "contributors": [
+    "Arpad Hegedus <hegedus.arpad@gmail.com> (http://arpadhegedus.com)"
+  ],
+  "maintainers": [
+    "Arpad Hegedus <hegedus.arpad@gmail.com> (http://arpadhegedus.com)"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "standard",
+    "env": {
+      "es6": true,
+      "jest": true
+    }
+  },
+  "jest": {},
+  "dependencies": {
+    "postcss": "^6.0.19",
+    "postcss-plugin-utilities": "^2.2.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.2",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^22.4.2"
+  }
+}
