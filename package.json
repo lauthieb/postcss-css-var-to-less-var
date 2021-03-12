@@ -1,12 +1,12 @@
 {
-  "name": "postcss-css-var-to-sass-var",
+  "name": "postcss-css-var-to-less-var",
   "version": "1.0.0",
-  "description": "A PostCSS plugin to convert CSS variables to Sass variables",
+  "description": "A PostCSS plugin to convert CSS variables to Less variables",
   "main": "index.js",
   "license": "MIT",
-  "repository": "https://github.com/arpadHegedus/postcss-css-var-to-sass-var.git",
-  "homepage": "https://github.com/arpadHegedus/postcss-css-var-to-sass-var#readme",
-  "bugs": "https://github.com/arpadHegedus/postcss-css-var-to-sass-var/issues",
+  "repository": "https://github.com/lauthieb/postcss-css-var-to-less-var.git",
+  "homepage": "https://github.com/lauthieb/postcss-css-var-to-less-var#readme",
+  "bugs": "https://github.com/lauthieb/postcss-css-var-to-less-var/issues",
   "keywords": [
     "postcss",
     "postcss-plugin",
@@ -15,14 +15,14 @@
     "css",
     "style",
     "variable",
-    "sass"
+    "less"
   ],
-  "author": "Arpad Hegedus <hegedus.arpad@gmail.com> (http://arpadhegedus.com)",
+  "author": "Laurent Thiebault <thiebault.laurent@gmail.com> (https://lauthieb.dev)",
   "contributors": [
-    "Arpad Hegedus <hegedus.arpad@gmail.com> (http://arpadhegedus.com)"
+    "Laurent Thiebault <thiebault.laurent@gmail.com> (https://lauthieb.dev)"
   ],
   "maintainers": [
-    "Arpad Hegedus <hegedus.arpad@gmail.com> (http://arpadhegedus.com)"
+    "Laurent Thiebault <thiebault.laurent@gmail.com> (https://lauthieb.dev)"
   ],
   "engines": {
     "node": ">=6.0.0"
