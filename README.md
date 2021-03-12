@@ -71,5 +71,9 @@ gulp.task('css', () => {
 npm test
 ```
 
+## Special thanks
+
+This package is a fork of [postcss-css-var-to-sass-var](https://github.com/arpadHegedus/postcss-css-var-to-sass-var). Thanks a lot [Arpad Hegedus](https://github.com/arpadHegedus) for this great work!
+
 ## License
 This project is licensed under the [MIT License](./LICENSE).
