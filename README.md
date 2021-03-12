@@ -1,15 +1,14 @@
-# PostCSS CSS var to Sass var [<img src="https://postcss.github.io/postcss/logo.svg" alt="PostCSS Logo" width="90" height="90" align="right">](https://github.com/postcss/postcss)
-[![NPM Version](https://img.shields.io/npm/v/postcss-css-var-to-sass-var.svg)](https://www.npmjs.com/package/postcss-css-var-to-sass-var)
-[![Build Status](https://travis-ci.org/arpadHegedus/postcss-css-var-to-sass-var.svg?branch=master)](https://travis-ci.org/arpadHegedus/postcss-css-var-to-sass-var)
+# PostCSS CSS var to Less var [<img src="https://postcss.github.io/postcss/logo.svg" alt="PostCSS Logo" width="90" height="90" align="right">](https://github.com/postcss/postcss)
+[![NPM Version](https://img.shields.io/npm/v/postcss-css-var-to-less-var.svg)](https://www.npmjs.com/package/postcss-css-var-to-less-var)
 [![BGitter Chat](https://img.shields.io/badge/chat-gitter-blue.svg)](https://gitter.im/postcss/postcss)
 
-A [PostCSS](https://github.com/postcss/postcss) plugin to convert CSS variables to Sass variables
+A [PostCSS](https://github.com/postcss/postcss) plugin to convert CSS variables to Less variables
 
 
 ## Installation
 
 ```
-npm install postcss-css-var-to-sass-var
+npm install postcss-css-var-to-less-var
 ```
 
 ## Examples
@@ -29,17 +28,17 @@ p {
   font-size: var(--size);
 }
 ```
-```scss
+```less
 /* output */
-$color: black;
-$size: 15px;
+@color: black;
+@size: 15px;
 div {
-  $size: 20px;
-  background: $color;
-  font-size: $size; // 20px
+  @size: 20px;
+  background: @color;
+  font-size: @size; // 20px
 }
 p {
-  font-size: $size; // 15px
+  font-size: @size; // 15px
 }
 ```
 
@@ -48,7 +47,7 @@ p {
 ### [Postcss JS API](https://github.com/postcss/postcss#js-api)
 
 ```js
-postcss([require('postcss-css-var-to-sass-var')]).process(yourCSS);
+postcss([require('postcss-css-var-to-less-var')]).process(yourCSS);
 ```
 
 ### [Gulp](https://github.com/gulpjs/gulp)
@@ -56,7 +55,7 @@ postcss([require('postcss-css-var-to-sass-var')]).process(yourCSS);
 ```js
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
-const varConvert = require('postcss-css-var-to-sass-var');
+const varConvert = require('postcss-css-var-to-less-var');
 gulp.task('css', () => {
     gulp.src('path/to/dev/css')
         .pipe(postcss([
@@ -64,12 +63,6 @@ gulp.task('css', () => {
         ]))
         .pipe(gulp.dest('path/to/build/css'));
 });
-```
-
-## Tests
-
-```
-npm test
 ```
 
 ## License
