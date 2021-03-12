@@ -1,11 +1,11 @@
 const postcss = require('postcss')
 const util = require('postcss-plugin-utilities')
 
-function varToSass (object, variable) {
-  return '$' + variable.substring(2)
+function varToLess (object, variable) {
+  return '@' + variable.substring(2)
 }
 
-module.exports = postcss.plugin('varToSass', opt => css => {
+module.exports = postcss.plugin('varToLess', opt => css => {
   css.walkRules(':root', rule => {
     rule.walkDecls(decl => {
       rule.before(decl)
@@ -13,7 +13,7 @@ module.exports = postcss.plugin('varToSass', opt => css => {
     rule.remove()
   })
   css.walkDecls(decl => {
-    if (decl.prop.startsWith('--')) decl.prop = '$' + decl.prop.substring(2)
+    if (decl.prop.startsWith('--')) decl.prop = '@' + decl.prop.substring(2)
   })
-  util.parseFunction(css, 'var', varToSass)
+  util.parseFunction(css, 'var', varToLess)
 })
